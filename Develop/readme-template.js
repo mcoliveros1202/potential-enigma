@@ -26,8 +26,6 @@ const generateFile = (project, github) => {
 
     ## Questions
 
-
-
       `;
     };
 

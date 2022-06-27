@@ -1,14 +1,22 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://github.com/projecthub",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "mcoliveros1202",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^7.0.4"
-  }
+    "inquirer": "^7.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/mcoliveros1202/potential-engima.git"
+  },
+  "keywords": [
+    "readme.md",
+    "generator"
+  ]
 }

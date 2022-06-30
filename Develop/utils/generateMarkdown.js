@@ -25,7 +25,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 if (license === 'Apache License 2.0') {
-  return '[!Apache License 2.0](https://opensource.org/licenses/Apache-2.0)'
+  return '[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)'
 } else if (license === 'MIT') {
   return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
 } else if (license === 'ISC') {

@@ -105,42 +105,9 @@ function writeToFile(fileName, data){
 // initialize the app
 function init(){
     inquirer.prompt(questions).then((inquirerResponses)=> {
-        writeToFile('Readme.md', generateMarkdown({ ...inquirerResponses}))
+        writeToFile('proREADME.md', generateMarkdown({ ...inquirerResponses}))
     })
 }
-/* questions()
-    .then(answers)
-    .then(readmeData => {
-        const pageMD = generateFile(readmeData);
-
-        // fs.writeFile('./README.md', pageMD, err => {
-        //     if (err) throw new Error(err);
-
-        //     console.log('File created! Checkout README.md in this directory to see it!');
-        // });
-
-    }); */
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) { }
-
-
-
-
 
 // Function call to initialize app
 init();
-
-// const printReadmeData = profileDataArr => {
-//     // This...
-//     for (let i = 0; i < profileDataArr.length; i += 1) {
-//         console.log(profileDataArr[i]);
-//     }
-
-//     console.log('==================')
-
-//     // Is the same as this...
-//     profileDataArr.forEach(profileItem => console.log(profileItem));
-// };
-
-// printReadmeData(profileDataArgs);

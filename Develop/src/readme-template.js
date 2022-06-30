@@ -1,7 +1,7 @@
-const generateFile = (project, github) => {
+const generateFile = (templateData) => {
     return `
-    # ${project}
-    https://github.com/${github}
+    # ${templateData.project}
+    https://github.com/${templateData.github}
 
     ## Description
     

@@ -25,19 +25,20 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 if (license === 'Apache License 2.0') {
-  return '[Apache License 2.0](https://opensource.org/licenses/Apache-2.0)'
+  return 'https://opensource.org/licenses/Apache-2.0'
+
 } else if (license === 'MIT') {
-  return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  return 'https://opensource.org/licenses/MIT'
 } else if (license === 'ISC') {
-  return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+  return 'https://opensource.org/licenses/ISC'
 } else if (license === 'GNU GPLv3') {
-  return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+  return 'https://www.gnu.org/licenses/gpl-3.0'
 } else if (license === 'CC0-1.0') {
-  return '[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)'
+  return 'http://creativecommons.org/publicdomain/zero/1.0/'
 } else if (license === 'CC-BY-4.0') {
-  return '[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)'
+  return 'https://creativecommons.org/licenses/by/4.0/'
 } else if (license === 'Boost Software License 1.0') {
-  return '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)'
+  return 'https://www.boost.org/LICENSE_1_0.txt'
 }
 else {
   return ''
@@ -51,15 +52,14 @@ else {
 function generateMarkdown(data) {
   return `
   # ${data.project} ${renderLicenseBadge(data.license)}
-  ###github.com/${data.github}
 
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contribute](#how-to-contribute)
-  - [Testing](#testing)
+  - [Contributing](#how-to-contribute)
+  - [Tests](#testing)
   - [Questions](#questions)
 
   ## Description
@@ -72,18 +72,20 @@ function generateMarkdown(data) {
     ${data.usage}
 
   ## License
-    ${renderLicenseLink(data.license)} ${data.license}
+    ${data.license} 
+    ${renderLicenseLink(data.license)}
     
-
-  ## How to Contribute
+  ## Contributing
     ${data.contributions}
 
-  ## Testing
+  ## Tests
     ${data.tests}
 
   ## Questions
     For questions, feel free to reach out via email at:
     ${data.email}
+
+    For more of my work, visit github.com/${data.github}
 
 `;
 }

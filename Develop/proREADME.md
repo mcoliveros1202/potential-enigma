@@ -1,36 +1,37 @@
 
-  # lasdkjf [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  ###github.com/as;ldkfj
+  # Professional README Generator [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contribute](#how-to-contribute)
-  - [Testing](#testing)
+  - [Contributing](#how-to-contribute)
+  - [Tests](#testing)
   - [Questions](#questions)
 
   ## Description
-    a;lskdjf
+    This application generates professional looking README.md files.
 
   ## Installation
-    alskfdj
+    There is no installation currently necessary for this application.
 
   ## Usage
-    alskdfj
+    To use, simply fill out the prompted questions and the Professional README Generator creates a README.md file. This is useful for any projects that require a README.md file to help ensure one does not forget important information.
 
   ## License
-    [Apache License 2.0](https://opensource.org/licenses/Apache-2.0) Apache License 2.0
+    Boost Software License 1.0 
+    https://www.boost.org/LICENSE_1_0.txt
     
+  ## Contributing
+    To contribute, simply fork off of the main repository and write the contribution code. Comment on the repository what has been done and request to push the code to the main repository.
 
-  ## How to Contribute
-    alskfj
-
-  ## Testing
-    als;dkfj
+  ## Tests
+    To test, one could use …
 
   ## Questions
     For questions, feel free to reach out via email at:
-    al;skdfj
+    mcoliveros1202@gmail.com
+
+    For more of my work, visit github.com/mcoliveros1202
 
